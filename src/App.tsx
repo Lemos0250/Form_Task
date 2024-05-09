@@ -18,6 +18,7 @@ export function App() {
                 <TableCell>289fh9123hf103frh9</TableCell>
                 <TableCell>Produto 01 {i}</TableCell>
                 <TableCell>R$ 192,00</TableCell>
+                <TableCell>Accept</TableCell>
               </TableRow>
               )
             })}
