@@ -1,10 +1,8 @@
-import { useState } from 'react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './components/ui/table'
 import { Input } from './components/ui/input'
 import { Button } from './components/ui/button'
 import { Search, PlusCircle } from 'lucide-react'
-import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@radix-ui/react-dialog'
-import { DialogFooter, DialogHeader } from './components/ui/dialog'
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from './components/ui/dialog'
 import { Label } from '@radix-ui/react-label'
 
 export function App() {
@@ -26,7 +24,7 @@ export function App() {
           <DialogTrigger asChild>
             <Button>
               <PlusCircle className='w-4 h-4 mr-2' />
-              Novo Produto
+              <p>Novo Produto</p>
             </Button>
           </DialogTrigger>
 
@@ -35,6 +33,7 @@ export function App() {
               <DialogTitle>Novo Produto</DialogTitle>
               <DialogDescription>Criar um novo produto no Sistema</DialogDescription>
             </DialogHeader>
+      
 
             <form action='space-y-6'>
               <div className='grid grid-cols-4 items-center text-right gap-3'>
